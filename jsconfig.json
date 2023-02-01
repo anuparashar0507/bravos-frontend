@@ -1,8 +1,20 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "target": "es2020",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@components/*": ["./components/*"],
+      "@lib/*": ["./lib/*"],
+      "@assets/*": ["./assets/*"],
+      // "apiLinks/*": ["apiLinks/*"],
+      // "contexts/*": ["./contexts/*"],
+      // "redux/*": ["./redux/*"],
+      // "container/*": ["./container/*"],
+      "@constants/*": ["./constants/*"]
     }
-  }
+  },
+  "exclude": ["node_modules", "out", ".next"]
 }
