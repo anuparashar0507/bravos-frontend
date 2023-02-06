@@ -12,7 +12,7 @@
       // "apiLinks/*": ["apiLinks/*"],
       // "contexts/*": ["./contexts/*"],
       // "redux/*": ["./redux/*"],
-      // "container/*": ["./container/*"],
+      "@containers/*": ["./containers/*"],
       "@constants/*": ["./constants/*"]
     }
   },

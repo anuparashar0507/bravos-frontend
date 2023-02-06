@@ -4,15 +4,12 @@ import {
   ColorModeProvider,
   useColorModeValue,
 } from "@chakra-ui/react";
-import DefaultLayout from "@/components/Layout/DefaultLayout";
-import "@fontsource/montserrat";
-import { theme } from "@lib/theme";
+import DefaultLayout from "@/lib/Layout";
+// import { theme } from "@lib/theme";
 export default function App({ Component, pageProps }) {
   return (
-    <ChakraProvider theme={theme}>
-      <ColorModeProvider
-        options={{ initialColorMode: "dark", useSystemColorMode: true }}
-      />
+    // <ChakraProvider theme={theme}>
+    <ChakraProvider>
       <DefaultLayout>
         <Component {...pageProps} />
       </DefaultLayout>
